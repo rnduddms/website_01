@@ -1,0 +1,77 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/*
+font-family: 'Great Vibes', cursive;
+font-family: 'Poppins', sans-serif;
+*/
+*{box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+html, body{margin: 0; padding: 0;}
+header, section, article, aside, main, nav, footer{display: block;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+.tit_font{font-family: 'Great Vibes', cursive;}
+
+/*start header*/
+{position: fixed; width: 100%; height: 80px; background-color: rgba(255,255,255,.75); z-index: 2; border-bottom: 1px solid #ccc;}
+headerheader .wrap{width: 1200px; height: 100%; margin: 0 auto; padding: 0 10px; position: relative;}
+
+header .wrap .logo{position: absolute; left:10px; top:50%; transform: translateY(-50%);}
+header .wrap .logo a{}
+header .wrap .logo a img{display: block; height: 24px;}
+
+
+header .wrap nav{height: 100%;}
+header .wrap nav ul{width: 100%; height: 100%; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+header .wrap nav ul li{margin: 0 30px; transition: margin 0.5s}
+header .wrap nav ul li a{display: block; font-size: 14px; line-height: 80px; color:#373735; position: relative; text-transform: uppercase;}
+header .wrap nav ul li:hover a{color:#662021;}
+header .wrap nav ul li:hover a:after{content:""; position: absolute; display: block; width: 100%; height: 4px; background-color: #662021; left: 0; bottom: 0;}
+
+
+header .wrap .sns{position: absolute; right:10px; top:50%;  transform: translateY(-50%);}
+header .wrap .sns ul{display: flex;}
+header .wrap .sns ul li{margin: 0 5px;}
+header .wrap .sns ul li:last-child{margin-right: 0;}
+header .wrap .sns ul li a{display: block; width: 24px; height: 24px; background-size: cover; background-position: 50% 50%; transition: background-image 0.5s;}
+header .wrap .sns ul li:nth-child(1) a{background-image: url(../img/fb_icon.png);}
+header .wrap .sns ul li:nth-child(1) a:hover{background-image: url(../img/fb_icon_hover.png);}
+header .wrap .sns ul li:nth-child(2) a{background-image: url(../img/insta_icon.png);}
+header .wrap .sns ul li:nth-child(2) a:hover{background-image: url(../img/insta_icon_hover.png);}
+header .wrap .sns ul li:nth-child(3) a{background-image: url(../img/youtube_icon.png);}
+header .wrap .sns ul li:nth-child(3) a:hover{background-image: url(../img/youtube_icon_hover.png);}
+
+/*end header*/
+
+
+/*start footer*/
+footer{background-color: #d9d9d9;}
+footer .wrap{width: 1200px; margin: 0 auto; padding-top: 40px 0;}
+footer .wrap .f_main{width: 100%; position: relative;}
+footer .wrap .f_main .f_logo{position: absolute; top: 0; left: 10px;}
+footer .wrap .f_main .f_logo img{display: block; height: 80px;}
+footer .wrap .f_main .f_info{}
+footer .wrap .f_main .f_info ul{display: flex; justify-content: center;}
+footer .wrap .f_main .f_info ul li{margin: 0 10px; padding: 33px 0;}
+footer .wrap .f_main .f_info ul li a{display: block; font: 14px; line-height: 1; color: #373735; text-transform: uppercase;}
+footer .wrap .f_main .f_info ul li:hover a{color: #662021;}
+
+footer .wrap .f_main  .f_sns{position: absolute; top: 0; right: 0;
+padding: 25px 0;}
+footer .wrap .f_main  .f_sns ul{display: flex;}
+footer .wrap .f_main  .f_sns ul li{margin: 0 10px;}
+footer .wrap .f_main  .f_sns ul li a{display: block; width: 30px; height: 30px; background-size: cover; background-position: 50% 50%;}
+
+footer .wrap .f_main .f_sns ul li:nth-child(1) a {background-image: url(../img/fb_icon.png);}
+footer .wrap .f_main .f_sns ul li:nth-child(2) a {background-image: url(../img/insta_icon.png);}
+footer .wrap .f_main .f_sns ul li:nth-child(3) a {background-image: url(../img/youtube_icon.png);}
+
+footer .wrap .f_main .f_sns ul li:nth-child(1):hover a {background-image: url(../img/fb_icon_hover.png);}
+footer .wrap .f_main .f_sns ul li:nth-child(2):hover a {background-image: url(../img/insta_icon_hover.png);}
+footer .wrap .f_main .f_sns ul li:nth-child(3):hover a {background-image: url(../img/youtube_icon_hover.png);}
+
+footer .wrap .copyrights{padding-top: 20px; line-height: 20px;
+font-size: 14px; color: #373735; text-align: center;}
+/*end footer*/
